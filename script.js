@@ -249,7 +249,7 @@ filterButtons.forEach(button => {
    SCROLL REVEAL
    ============================ */
 const revealElements = document.querySelectorAll(
-    '.section-header, .about-grid, .experience-card, .skill-card, .project-card, .service-card, .cp-card, .contact-grid'
+    '.section-header, .about-grid, .experience-card, .skill-card, .project-card, .cert-card, .service-card, .cp-card, .contact-grid'
 );
 
 revealElements.forEach(el => el.classList.add('reveal'));
@@ -333,7 +333,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 /* ============================
    TILT EFFECT ON CARDS
    ============================ */
-document.querySelectorAll('.project-card, .service-card, .experience-card').forEach(card => {
+document.querySelectorAll('.project-card, .service-card, .experience-card, .cert-card').forEach(card => {
     card.addEventListener('mousemove', (e) => {
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left;
